@@ -1,7 +1,7 @@
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:get/get.dart';
 
-class WhStorage extends GetxService {
+class WhStorageService extends GetxService {
   final storage = new FlutterSecureStorage();
 
   void write(String key, String value) async {
@@ -10,7 +10,7 @@ class WhStorage extends GetxService {
 
   Future<String> getValue(String key) async {
     String value = await storage.read(key: key);
-    return value;
+    return value.isNull ? "" : value;
   }
 
   Future<Map<String, String>> getAll() async {

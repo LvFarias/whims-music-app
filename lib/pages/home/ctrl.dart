@@ -1,7 +1,10 @@
+import 'package:app/services/user.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class HomeCtrl extends GetxController {
+  final WhUserService userService = Get.find();
+
   final RxInt _counter = 0.obs;
   int get counter => this._counter.value;
   set counter(int value) => this._counter.value = value;

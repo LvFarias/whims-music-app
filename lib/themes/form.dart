@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-InputDecoration mrInputDecoration({String hintText}) {
+InputDecoration whInputDecoration({String hintText}) {
   return InputDecoration(
     hintText: hintText,
     contentPadding: EdgeInsets.symmetric(

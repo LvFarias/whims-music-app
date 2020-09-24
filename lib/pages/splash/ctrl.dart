@@ -1,23 +1,14 @@
 import 'package:app/routes/routes.dart';
 import 'package:app/services/user.dart';
-import 'package:app/themes/app.dart';
 import 'package:get/get.dart';
 
 class InitialCtrl extends GetxController {
-  final WhUser userService = WhUser();
+  final WhUserService userService = Get.find();
 
   String route = WhRoutes.LOGIN;
 
   void init() async {
-    // await this.getTheme();
     await this.getUser();
-  }
-
-  getTheme() async {
-    String theme = await userService.storage.getValue("theme");
-    if (theme == "dark") {
-      Get.changeTheme(whThemeDark);
-    }
   }
 
   getUser() async {

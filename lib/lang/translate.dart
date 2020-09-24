@@ -16,6 +16,7 @@ class WhTranslate extends Translations {
           'success': 'success',
           'buttonQtd': 'buttonQtd',
           'appName': 'appName',
+          'logout': 'logout',
         },
         'pt_BR': {
           'email': 'Email',
@@ -31,6 +32,7 @@ class WhTranslate extends Translations {
           'success': 'Sucesso',
           'buttonQtd': 'Quantidade de vezes que o botão foi apertado',
           'appName': 'Meeting Rooms',
+          'logout': 'Sair',
         }
       };
 }

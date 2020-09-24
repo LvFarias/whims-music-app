@@ -2,12 +2,10 @@ import 'package:app/pages/splash/ctrl.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class InitialPage extends GetView {
-  final InitialCtrl initialCtrl = InitialCtrl();
-
+class InitialPage extends GetView<InitialCtrl> {
   @override
   Widget build(BuildContext context) {
-    initialCtrl.init();
+    controller.init();
     return Stack(
       children: <Widget>[
         Container(

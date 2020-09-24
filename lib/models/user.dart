@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 class User {
   String id;
   String name;
@@ -6,6 +8,14 @@ class User {
 
   User.fromJson(Map<String, dynamic> json) {
     this.id = json['id'];
+    this.name = json['name'];
+  }
+
+  User.fromStorage(String userStorage) {
+    if (userStorage.isNotEmpty) {
+      var userDecoded = jsonDecode(userStorage);
+      this.id = userDecoded['id'].toString();
+    }
   }
 
   Map<String, dynamic> toJson() {
