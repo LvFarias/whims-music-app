@@ -11,7 +11,7 @@ class WhApiService extends GetxService {
 
   Map<String, String> headers = {};
   bool isFullResponse = false;
-  String apiUrl = 'http://192.168.15.9:4274/';
+  String apiUrl = 'https://whims-music-api.herokuapp.com/';
 
   @override
   void onInit() {
