@@ -1,6 +1,6 @@
 name: app
 description: A new Flutter project.
-version: 0.1.0+2
+version: 0.2.0+0
 environment:
   sdk: ">=2.7.0 <3.0.0"
 dependencies:
@@ -10,6 +10,7 @@ dependencies:
   get: ^3.8.0
   flutter_secure_storage: ^3.3.4
   http: ^0.12.2
+  easy_theme: ^1.0.2
 dev_dependencies:
   flutter_test:
     sdk: flutter
